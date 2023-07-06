@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@styled-icons/boxicons-logos": "^10.47.0",
     "@styled-icons/material-outlined": "^10.47.0",
     "next": "13.4.8",
     "react": "18.2.0",

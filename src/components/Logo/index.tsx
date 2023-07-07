@@ -1,5 +1,5 @@
 import * as Styled from './styles';
 
 export const Logo = () => {
-  return <Styled.H2>Andre Alves</Styled.H2>;
+  return <Styled.LogoText>Andre Alves</Styled.LogoText>;
 };

@@ -7,12 +7,12 @@ export const Container = styled.ul`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: ${theme.spacings.huge};
+    gap: ${theme.spacings.large};
     list-style: none;
     transition: ${theme.transitions.slowest};
 
     @media ${theme.media.gteOrEqMedium} {
-      gap: ${theme.spacings.medium};
+      gap: ${theme.spacings.small};
     }
 
     @media ${theme.media.gteOrEqLarge} {
@@ -28,7 +28,7 @@ export const StyledLink = styled(Link)`
 
     > svg {
       fill: ${theme.colors.whiteColor};
-      width: 5rem;
+      width: 3.5rem;
       cursor: pointer;
       transition: all 0.4s;
 

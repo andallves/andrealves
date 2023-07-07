@@ -8,8 +8,10 @@ export const theme = {
   },
   font: {
     family: {
-      default: "'Open Sans', sans-serif",
-      secondary: "'Montserrat', sans-serif",
+      default: "'Roboto', sans-serif",
+      secondary: "'Dancing Script', cursive",
+      title: "'Raleway', sans-serif",
+      logo: "'Ysabeau Office', sans-serif",
     },
     sizes: {
       xsmall: '1.2rem',

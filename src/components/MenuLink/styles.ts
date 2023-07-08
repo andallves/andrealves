@@ -7,7 +7,7 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3.5rem;
+    gap: 5rem;
     transition: ${theme.transitions.slowest};
 
     @media ${theme.media.gteOrEqMedium} {
@@ -15,7 +15,7 @@ export const Container = styled.div`
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      gap: ${theme.spacings.xhero};
+      gap: ${theme.spacings.huge};
     }
 
     @media ${theme.media.gteOrEqLarge} {
@@ -30,23 +30,24 @@ export const Container = styled.div`
 
 export const StyledLink = styled(Link)`
   ${({ theme }) => css`
-    font-family: ${theme.font.family.default};
+    font-family: ${theme.font.family.title};
     font-style: normal;
     font-weight: 500;
-    font-size: ${theme.font.sizes.large};
+    font-size: ${theme.font.sizes.medium};
     color${theme.colors.whiteColor};
     transition: ${theme.transitions.fast};
 
-    &:hover {
-      color: ${theme.colors.gradientColor};
-    }
 
     @media ${theme.media.gteOrEqMedium} {
       font-size: ${theme.font.sizes.normal};
     }
 
     @media ${theme.media.gteOrEqLarge} {
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.normal};
+    }
+
+    &:hover {
+      color: ${theme.colors.gradientColor};
     }
   `}
 `;

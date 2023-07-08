@@ -33,7 +33,20 @@ export const Container = styled.nav<MenuShowed>`
     gap: ${theme.spacings.xxhero};
 
     @media ${theme.media.gteOrEqMedium} {
-      height: 5rem;
+      visibility: visible;
+      display: fixed;
+      height: 6rem;
+      display: flex;
+      align-items: center;
+      opacity: 1;
+
+    }
+
+    @media ${theme.media.gteOrEqLarge} {
+      visibility: visible;
+      opacity: 1;
+      position: fixed;
+      height: 8rem;
       display: flex;
       align-items: center;
     }
@@ -48,16 +61,16 @@ export const Navbar = styled.div`
     text-align: center;
     padding: ${theme.spacings.xlarge} 0;
     transition: ${theme.transitions.slowest};
-    gap: ${theme.spacings.hero};
+    gap: 12rem;
 
     @media ${theme.media.gteOrEqMedium} {
       display: flex;
-      width: ;
+      width: 100%;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       padding: 0 ${theme.spacings.xlarge};
-      height: 7rem;
+      height: 6rem;
     }
 
     @media ${theme.media.gteOrEqLarge} {
@@ -65,7 +78,8 @@ export const Navbar = styled.div`
       justify-content: space-between;
       align-items: center;
       padding: 1rem ${theme.spacings.xxhero};
-      height: 9rem;
+      height: 8rem;
+      gap: 7rem;
     }
   `};
 `;

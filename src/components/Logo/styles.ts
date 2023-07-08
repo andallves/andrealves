@@ -13,7 +13,14 @@ export const LogoText = styled.h2`
 
     @media ${theme.media.gteOrEqMedium} {
       font-size: ${theme.font.sizes.medium};
-      width: 20rem;
+      max-width: 20rem;
+      min-width: 12rem;
+    }
+
+    @media ${theme.media.gteOrEqLarge} {
+      font-size: ${theme.font.sizes.medium};
+      max-width: 15rem;
+      min-width: 12rem;
     }
   `}
 `;

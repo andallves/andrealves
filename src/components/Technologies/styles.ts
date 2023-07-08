@@ -29,7 +29,7 @@ export const ContainerAdditionalSkills = styled.div`
     align-items: center;
     justify-items: flex-start;
     margin: 5rem auto;
-    padding: 8rem 2rem;
+    padding: 0 2rem;
 
     ${Title} {
       font-size: ${theme.font.sizes.normal};

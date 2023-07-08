@@ -87,6 +87,10 @@ export const Progress = styled.div<LevelPorcentBar>`
       border-radius: 8.3rem;
       z-index: 4;
 
+      &:hover {
+          box-shadow: 0 0 .5rem .2rem ${theme.colors.gradientColor};
+      }
+
       @media ${theme.media.gteOrEqMedium} {
         height: 1.6rem;
         top: 4rem;
@@ -107,6 +111,10 @@ export const Measure = styled.div`
       top: 3.8rem;
       background: ${theme.colors.blueColor};
       border-radius: 8.3rem;
+
+      &:hover {
+        box-shadow: 0 0 .5rem .2rem ${theme.colors.gradientColor};
+      }
 
       @media ${theme.media.gteOrEqMedium} {
         height: 1.6rem;

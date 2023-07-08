@@ -14,7 +14,7 @@ export const Projects = () => {
 
         <Styled.WrapperProjects>
           <ProjectCard
-            srcImg="/img/projectCard-todo.png"
+            srcImg="/img/project-todo.png"
             altText="Projeto ToDo"
             title={'Todo'}
             description={
@@ -23,7 +23,7 @@ export const Projects = () => {
             link={'https://github.com/andallves/todo'}
           />
           <ProjectCard
-            srcImg="/img/projectCard-multistepform.png"
+            srcImg="/img/project-multistepform.png"
             altText="Projeto Formulário MultiStep"
             title={'Formulário MultiStep'}
             description={
@@ -32,7 +32,7 @@ export const Projects = () => {
             link={'https://github.com/andallves/challenge_MultStepForm'}
           />
           <ProjectCard
-            srcImg="/img/projectCard-agenda.png"
+            srcImg="/img/project-agenda.png"
             altText="Projeto Agenda"
             title="Agenda"
             description={

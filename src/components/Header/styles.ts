@@ -94,6 +94,7 @@ export const Container = styled.header`
       padding: 0 6rem;
       margin-top: 5rem;
     }
+    
     @media ${theme.media.gteOrEqLarge} {
       height: 90vh;
       padding: 0 10rem;

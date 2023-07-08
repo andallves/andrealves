@@ -1,16 +1,19 @@
-import Image from 'next/image';
+import { Header } from '@/components/Header';
+import { Menu } from '@/components/Menu';
+import { Projects } from '@/components/Projects';
+import { Technologies } from '@/components/Technologies';
+import { About } from '@/components/About';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
     <main>
-      <Image
-        src="/vercel.svg"
-        alt="Vercel Logo"
-        width={100}
-        height={24}
-        priority
-      />
-      <h1>Portfolio</h1>
+      <Menu />
+      <Header />
+      <Projects />
+      <Technologies />
+      <About />
+      <Footer />
     </main>
   );
 }

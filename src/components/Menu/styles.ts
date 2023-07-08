@@ -43,6 +43,7 @@ export const Container = styled.nav<MenuShowed>`
     }
 
     @media ${theme.media.gteOrEqLarge} {
+      z-index: 10;
       visibility: visible;
       opacity: 1;
       position: fixed;

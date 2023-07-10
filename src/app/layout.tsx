@@ -4,6 +4,7 @@ import StyledComponentsRegistry from '../lib/registry';
 import { GlobalStyles } from '@/styles/global-styles';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '@/styles/theme';
+import Head from 'next/head';
 
 export const metadata = {
   title: 'Portfolio - Andre Alves',
@@ -17,11 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <head>
+      <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Raleway:wght@300;400&family=Ysabeau+Office:ital,wght@1,200&display=swap" rel="stylesheet" />
-      </head>
+      </Head>
       <body>
         <StyledComponentsRegistry>
           <ThemeProvider theme={theme}>

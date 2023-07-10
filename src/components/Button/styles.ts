@@ -18,7 +18,7 @@ export const Button = styled.button`
     cursor: pointer;
 
     &:hover {
-      opacity: .8;
+      background: rgba(0, 205, 255, 0.8);
     }
   `}
 `;

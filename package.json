@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "deploy-static": "npm run build && npm run export",
+    "lint": "eslint src --max-wranings=0",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@next/font": "^13.4.9",
@@ -38,5 +41,11 @@
     "jest-styled-components": "^7.1.1",
     "jsdom": "^22.1.0",
     "prettier": "^3.0.0"
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "npm run lint -- --fix",
+      "npm test -- --findRelatedTests --bail"
+    ]
   }
 }

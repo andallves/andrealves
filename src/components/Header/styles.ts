@@ -94,7 +94,7 @@ export const Container = styled.header`
       padding: 0 6rem;
       margin-top: 5rem;
     }
-    
+
     @media ${theme.media.gteOrEqLarge} {
       height: 90vh;
       padding: 0 10rem;
@@ -154,7 +154,7 @@ export const Title = styled.h1`
 `;
 
 export const TextContainer = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
       position: relative;
       width: 20rem;
       left: 5%;

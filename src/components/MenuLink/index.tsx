@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import * as Styled from './styles';
 
 export const MenuLink = () => {

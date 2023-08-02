@@ -18,14 +18,13 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
-  padding: 2rem 0;
+  gap: 1rem;
+  padding: 6rem 0;
 `;
 
 export const Paragraph = styled.p`
   ${({ theme }) => css`
     position: relative;
-    margin: 2rem 0;
     text-align: justify;
     color: ${theme.colors.grayColor};
     font-size: ${theme.font.sizes.small};

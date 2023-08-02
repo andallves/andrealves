@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Button } from '../Button';
 import { Heading } from '../Heading';
 import * as Styled from './styles';
-import { Modal } from '../Modal';
 
 interface ProjectCardProps {
   srcImg: string;

@@ -4,7 +4,7 @@ declare global {
   namespace jest {
     interface AsymmetricMatcher {
       $$typeof: symbal;
-      sample?: string | RegExp | object | Array<any> | Function;
+      sample?: string | RegExp | object | Array<T> | Function;
     }
 
     type Value = string | number | RegExp | AsymmetricMatcher | undefined;

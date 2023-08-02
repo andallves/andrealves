@@ -1,17 +1,10 @@
 'use client'
-
 import StyledComponentsRegistry from '../lib/registry';
 import { GlobalStyles } from '@/styles/global-styles';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '@/styles/theme';
-import { Metadata } from 'next';
 import { StyleSheetManager } from 'styled-components';
 import isPropValid from '@emotion/is-prop-valid';
-
-export const metadata: Metadata = {
-  title: 'Portfolio - Andre Alves',
-  description: 'Develop using NextJs by Andre Alves',
-};
 
 export default function RootLayout({
   children,
@@ -27,14 +20,14 @@ export default function RootLayout({
         <title>Andre Alves - Portfolio</title>
       </head>
       <body>
-        <StyledComponentsRegistry>
           <StyleSheetManager shouldForwardProp={isPropValid}>
+        <StyledComponentsRegistry>
           <ThemeProvider theme={theme}>
             {children}
             <GlobalStyles />
           </ThemeProvider>
-          </StyleSheetManager>
         </StyledComponentsRegistry>
+          </StyleSheetManager>
       </body>
     </html>
   );

@@ -9,5 +9,7 @@ export const Container = styled.div`
 
     padding: ${theme.spacings.medium} 0rem;
     background: ${theme.colors.backgroundColor};
-`}
+
+    /* @media ${theme.media} */
+  `}
 `;

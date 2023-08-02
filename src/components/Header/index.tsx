@@ -14,7 +14,7 @@ export const Header = () => {
       <Styled.StyledImage
         src="/img/header_bg.png"
         alt="Imagem abstrata"
-        width={200}
+        width={500}
         height={300}
       ></Styled.StyledImage>
 

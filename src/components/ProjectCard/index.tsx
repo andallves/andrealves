@@ -1,7 +1,9 @@
 'use client';
+import { useState } from 'react';
 import { Button } from '../Button';
 import { Heading } from '../Heading';
 import * as Styled from './styles';
+import { Modal } from '../Modal';
 
 interface ProjectCardProps {
   srcImg: string;
@@ -17,9 +19,11 @@ export const ProjectCard = ({
   description,
   link,
 }: ProjectCardProps) => {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Styled.Container>
-      <Styled.StyledImage src={srcImg} alt={altText} width={50} height={30} />
+    <Styled.Container onClick={() => setOpen(!open)} >
+      <Styled.StyledImage src={srcImg} alt={altText} width={400} height={400} />
       <Heading as="h3">{title}</Heading>
       <Styled.Bar></Styled.Bar>
       <Styled.Paragraph>{description}</Styled.Paragraph>

@@ -8,7 +8,7 @@ export const theme = {
   },
   font: {
     family: {
-      default: "'Roboto', sans-serif",
+      default: "'--font-roboto', sans-serif",
       secondary: "'Dancing Script', cursive",
       title: "'Raleway', sans-serif",
       logo: "'Ysabeau Office', sans-serif",

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 type MenuShowed = {
-  showMenu?: boolean;
+  showMenu: boolean;
 };
 
 const menuShowed = () => css`
@@ -93,8 +93,8 @@ export const Button = styled.button<MenuShowed>`
     right: 2rem;
     width: 4rem;
     height: 4rem;
-    background: ${theme.colors.backgroundColor};
-    color: ${theme.colors.blueColor};
+    background: transparent;
+    color: ${theme.colors.grayColor};
     border: none;
     display: flex;
     align-items: center;
@@ -106,8 +106,9 @@ export const Button = styled.button<MenuShowed>`
     }
 
     > svg {
-      width: 3rem;
-      height: 3rem;
+      width: 4rem;
+      height: 4rem;
+      fill: ${theme.colors.grayColor};
     }
   `}
 `;

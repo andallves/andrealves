@@ -19,6 +19,7 @@ export const Container = styled.div`
     padding: 0 2rem;
     margin: 2rem;
     transition: ${theme.transitions.fast};
+    cursor: pointer;
 
     ${Title} {
       margin: 0;

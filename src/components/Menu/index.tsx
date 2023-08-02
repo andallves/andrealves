@@ -1,11 +1,14 @@
 'use client';
+
 import * as Styled from './styles';
-import { Logo } from '../Logo';
-import { SocialMidia } from '../SocialMidia';
+import { useState } from 'react';
+
 import { Menu as MenuIcon } from '@styled-icons/material-outlined/Menu';
 import { Close as CloseMenu } from '@styled-icons/material-outlined/Close';
-import { useState } from 'react';
+
+import { Logo } from '../Logo';
 import { MenuLink } from '../MenuLink';
+import { SocialMidia } from '../SocialMidia';
 
 export const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
